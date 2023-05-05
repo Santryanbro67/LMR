@@ -1,0 +1,63 @@
+#bodyIdx {
+    background-color: darkgrey;
+}
+
+.linkMenu {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(62, 114, 12);
+    font-size: 40px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+#menu {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(185, 170, 99);
+}
+
+.cnav {
+   width: 80%;
+   background-color: burlywood;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px;
+   max-width: 500px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.labelCtt{
+    font-size: 20px;
+    padding: 20px;
+    width: 20px;
+    color: gray;
+}
+.h1Ctt{
+    font-size: 40px;
+    text-align: center;
+}
+
+#inputCtt{
+    background-color: rgb(117, 90, 32);
+}
+#bodyCtt{
+    background-color: rgb(117, 90, 32);
+}
+.navLgn{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#lBody{
+    background-color: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.h1Lgn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blanchedalmond;
+    font-size: 40px;
+    text-align: center;
+}
