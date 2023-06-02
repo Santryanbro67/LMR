@@ -1,21 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Compra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
-</head>
-<body>
+
+<body style="background-color: aliceblue;">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-aquamarine" data-bs-theme="dark"
+            style="background-color: aquamarine;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="img/244679.png" style="width: 40px;" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="jogadores.html"
+                                style="color: black;">Jogadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compra.html" style="color: black;">Compra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html" style="color: black;">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Pagamento</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credito" name="paymentMethod" type="radio" class="custom-control-input"
+                                checked="" required="">
+                            <label class="custom-control-label" for="credito">Cartão de crédito</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debito" name="paymentMethod" type="radio" class="custom-control-input"
+                                required="">
+                            <label class="custom-control-label" for="debito">Cartão de débito</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-nome">Nome no cartão</label>
+                            <input type="text" class="form-control" id="cc-nome" placeholder="" required="">
+                            <small class="text-muted">Nome completo, como mostrado no cartão.</small>
+                            <div class="invalid-feedback">
+                                O nome que está no cartão é obrigatório.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-numero">Número do cartão de crédito</label>
+                            <input type="text" class="form-control" id="cc-numero" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                O número do cartão de crédito é obrigatório.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiracao">Data de expiração</label>
+                            <input type="text" class="form-control" id="cc-expiracao" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Data de expiração é obrigatória.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Código de segurança é obrigatório.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Continue o checkout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
 </html>
